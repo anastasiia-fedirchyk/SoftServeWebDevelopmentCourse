@@ -1,0 +1,11 @@
+let a;
+let b;
+a = 'First message';
+b = 'Second message';
+// print(a, b);
+document.write(a, b, "<br>");
+let temp = a;
+a = b;
+b = temp;
+// print(a, b);
+document.write(a, b, "<br>");
