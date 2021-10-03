@@ -17,8 +17,8 @@ let counter = 0;
 let result = 1;
 
 while (counter < myArray.length) {
-    result = result * myArray[counter]
-    counter = counter + 1
+    result = result * myArray[counter];
+    counter = counter + 1;
 }
 console.log("Result is: " + result);
 

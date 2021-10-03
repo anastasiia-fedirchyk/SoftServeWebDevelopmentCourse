@@ -17,4 +17,4 @@ function returnLastElements(arr, counter) {
 }
 
 let arr = [1, 2, 3, 4];
-console.log(returnLastElements(arr, 5))
+console.log(returnLastElements(arr, 5));

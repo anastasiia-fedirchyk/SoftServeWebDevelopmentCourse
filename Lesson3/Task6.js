@@ -7,10 +7,10 @@
 // findUnique([1, 2, 3, 5, 11]); // => true
 
 function isUnique(arrayToCheck, singleElement) {
-    let elementsInArray = []
+    let elementsInArray = [];
     for (let i = 0; i < arrayToCheck.length; i++) {
         if (arrayToCheck[i] === singleElement) {
-            elementsInArray.push(arrayToCheck[i])
+            elementsInArray.push(arrayToCheck[i]);
         }
     }
 
@@ -33,5 +33,5 @@ function findUnique(arrayToCheck) {
 }
 
 
-let myArr = [1, 2, 3]
-findUnique(myArr)
+let myArr = [1, 2, 3];
+findUnique(myArr);

@@ -6,8 +6,8 @@
 //     findMin(12, 14, 4, -4, 0.2); // => -4
 
 function findMin() {
-    return Math.min(...arguments)
+    return Math.min(...arguments);
 }
 
-console.log(findMin(-2, 1, 14, 7, 1, 0, -3))
+console.log(findMin(-2, 1, 14, 7, 1, 0, -3));
 

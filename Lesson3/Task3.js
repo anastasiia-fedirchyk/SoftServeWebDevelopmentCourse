@@ -5,19 +5,19 @@
 
 function randArray(k) {
 //prepare array with values from 1 to 500
-    let myArray = []
+    let myArray = [];
     for (let i = 0; i < 500; i++) {
-        myArray[i] = i + 1
+        myArray[i] = i + 1;
     }
 
 //fill in result array
-    let resultArray = []
+    let resultArray = [];
     for (let i = 0; i < k; i++) {
-        resultArray[i] = Math.floor(Math.random() * myArray.length)
+        resultArray[i] = Math.floor(Math.random() * myArray.length);
     }
-    return resultArray
+    return resultArray;
 }
 
-let resultOfExecution = randArray(3)
-console.log(resultOfExecution)
+let resultOfExecution = randArray(3);
+console.log(resultOfExecution);
 

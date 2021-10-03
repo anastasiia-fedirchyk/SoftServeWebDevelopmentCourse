@@ -8,9 +8,9 @@
 
 function raiseToDegree(a, b) {
     if (Number.isInteger(a) && Number.isInteger(b)) {
-        return Math.pow(a, b)
+        return Math.pow(a, b);
     } else
-        return "Incorrect input"
+        return "Incorrect input";
 
 }
 
@@ -19,6 +19,6 @@ let button = document.querySelector("button");
 button.onclick = function () {
     let a = Number(document.querySelector(".number").value);
     let b = Number(document.querySelector(".degree").value);
-    raiseToDegree(a, b)
-    alert(raiseToDegree(a, b))
+    raiseToDegree(a, b);
+    alert(raiseToDegree(a, b));
 }
