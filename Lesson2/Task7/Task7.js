@@ -12,7 +12,7 @@ let timeRangeDay = [12, 13, 14, 15, 16, 17];
 let timeRangeEvening = [18, 19, 20, 21, 22];
 
 //1
-switch (hourNow) {
+switch (true) {
     case(timeRangeNight.includes(hourNow)):
         alert("Доброї ночі");
         break;
