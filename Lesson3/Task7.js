@@ -5,6 +5,9 @@
 
 function returnLastElements(arr, counter) {
     let arrayResult = [];
+    if (counter === undefined) {
+        return arr.slice(-1)
+    }
 
     for (let i = arr.length - 1; counter !== 0; i--) {
         if (arr[i] !== undefined) {
@@ -17,4 +20,4 @@ function returnLastElements(arr, counter) {
 }
 
 let arr = [1, 2, 3, 4];
-console.log(returnLastElements(arr, 5));
+console.log(returnLastElements(arr));
