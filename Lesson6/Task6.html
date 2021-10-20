@@ -1,0 +1,29 @@
+<!--6. Задано HTML-сторінку:-->
+
+<!--•	Користувач почергово вводить 2 повідомлення (використати prompt()). 1-е повідомлення записується в 1-ий <input>, 2-ге – в 2-ий.-->
+<!--•	Поміняти значення 1-го і 2-го інпутів місцями.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task6</title>
+</head>
+<body>
+<input type="text" id="input1" value="Text1">
+<input type="text" id="input2" value="Text2">
+<script>
+    let firstValue = prompt("Please, enter the text 1")
+    let secondValue = prompt("Please, enter the text 2")
+    let firstInput = document.body.querySelector("#input1")
+    let secondInput = document.body.querySelector("#input2")
+    firstInput.setAttribute("value", firstValue)
+    secondInput.setAttribute("value", secondValue)
+
+    //    i didn't catch how the second part should be done, so the easiest way is:
+    firstInput.setAttribute("value", secondValue)
+    secondInput.setAttribute("value", firstValue)
+</script>
+</body>
+</html>

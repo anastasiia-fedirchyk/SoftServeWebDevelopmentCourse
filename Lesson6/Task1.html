@@ -1,0 +1,21 @@
+<!--1. На HTML-сторінці є елемент div:-->
+<!--<body>-->
+<!--<div id="test">First</div>-->
+<!--</body>-->
+<!--Потрібно змінити вміст елемента із First на Last. Доступіться до елемента div хоча б 2 способами.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task1</title>
+</head>
+<body>
+<div id="test">First</div>
+
+<script>
+  document.body.firstElementChild.textContent = "Last"
+  document.body.children[0].textContent = "Last"
+</script>
+</body>
+</html>
