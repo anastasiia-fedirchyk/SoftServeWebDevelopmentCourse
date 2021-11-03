@@ -1,0 +1,27 @@
+<!--1. На HTML-сторінці є посилання <a>.
+У випадку коли, href починається на https://,
+потрібно додати посиланню атрибут target="_blank".-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+</head>
+<body>
+<a href="https://">Link</a>
+
+<script>
+    function addTag() {
+        if ($("a").attr("href") === "https://") {
+            $('a').attr('target', '_blank');
+        }
+    }
+
+    addTag()
+</script>
+
+
+</body>
+</html>

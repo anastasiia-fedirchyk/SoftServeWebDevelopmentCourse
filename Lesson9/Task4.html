@@ -1,0 +1,29 @@
+<!--4. На HTML-сторінці є 6 чекбоксів. Напишіть скріпт,-->
+<!--який після того, як користувач позначив будь-які 3 чекбокси, всі чекбокси робить неактивними.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<form onclick="checkInputs()">
+    <input type="checkbox" id="ch1"> <label for="ch1"> 1</label><br>
+    <input type="checkbox" id="ch2"> <label for="ch2"> 2</label><br>
+    <input type="checkbox" id="ch3"> <label for="ch3"> 3</label><br>
+    <input type="checkbox" id="ch4"> <label for="ch4"> 4</label><br>
+    <input type="checkbox" id="ch5"> <label for="ch5"> 5</label><br>
+    <input type="checkbox" id="ch6"> <label for="ch6"> 6</label><br>
+</form>
+
+<script>
+    function checkInputs() {
+        if ($("form>input:checked").length >= 3) {
+            $('form>input').prop('disabled', true);
+        }
+    }
+</script>
+
+</body>
+</html>
